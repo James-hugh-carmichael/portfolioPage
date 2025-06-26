@@ -30,6 +30,7 @@ main{
 .hero h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   animation: fadeIn 1s ease-in-out;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 .hero .tagline {
@@ -148,12 +149,13 @@ main{
 }
 
 .project img {
-  max-width: 100%; /* Ensures the image doesn't overflow */
-  height: auto;    /* Maintains the aspect ratio */
-  border-radius: 8px; /* Optional: Matches the card's rounded corners */
-  object-fit: cover;  /* Ensures a consistent look if the image dimensions vary */
-  margin-bottom: 1rem; /* Adds spacing below the image */
-  display: block; /* Removes inline spacing issues */
+  max-width: 100%; 
+  height: auto;    
+  border-radius: 8px;
+  object-fit: cover; 
+  margin-bottom: 1rem; 
+  display: block; 
+  justify-self: center;
 }
 
 /* Footer Styles */
@@ -194,7 +196,7 @@ footer p {
 }
 
 /* Responsive Design */
-@media (max-width: 1130px) {
+@media (max-width: 1400px) {
   .projects {
     grid-template-columns: repeat(2, 1fr); /* 2 projects per row */
   }
